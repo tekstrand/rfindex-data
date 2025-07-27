@@ -1,7 +1,9 @@
 # DecapCMS Configuration for RFIndex
+
+local_backend: true
+
 backend:
   name: git-gateway
-  local_backend: true
 
 media_folder: "static/img"
 public_folder: "/img"
@@ -39,14 +41,14 @@ collections:
           - { name: "removable", label: "Removable", widget: "boolean", required: false }
           - { name: "voltage", label: "Voltage", widget: "string", required: false }
           - { name: "charging", label: "Charging", widget: "string" }
-      - { name: "antennaConnector", label: "Antenna Connector", widget: "string" }
-      - { name: "waterproofRating", label: "Waterproof Rating", widget: "string", required: false }
+      - { name: "antennaConnector", label: "Antenna Connector", widget: "select", options: ["SMA-F", "SMA-M", "BNC", "N-Type", "Proprietary", "None"] }
+      - { name: "waterproofRating", label: "Waterproof Rating", widget: "select", options: ["Unknown", "None", "IP54", "IP57", "IP67"], required: false }
       - label: "Programming"
         name: "programming"
         widget: "object"
         fields:
           - { name: "chirpSupport", label: "CHIRP Support", widget: "boolean" }
-          - { name: "cableType", label: "Cable Type", widget: "string" }
+          - { name: "cableType", label: "Cable Type", widget: "select", options: ["Kenwood 2-pin", "USB-C", "Proprietary"] }
           - { name: "manualProgramming", label: "Manual Programming", widget: "boolean" }
           - { name: "pcSoftware", label: "PC Software", widget: "string", required: false }
       - { name: "priceEstimate", label: "Price Estimate", widget: "string", required: false }
