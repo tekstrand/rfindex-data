@@ -1,0 +1,74 @@
+# DecapCMS Configuration for RFIndex
+backend:
+  name: git-gateway
+  local_backend: true
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "radios"
+    label: "Radios"
+    folder: "data/radios"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    fields:
+      - { name: "id", label: "ID", widget: "string" }
+      - { name: "brand", label: "Brand", widget: "string" }
+      - { name: "model", label: "Model", widget: "string" }
+      - { name: "description", label: "Description", widget: "text", required: false }
+      - label: "Frequency Bands"
+        name: "frequencyBands"
+        widget: "list"
+        fields:
+          - { name: "band", label: "Band", widget: "string" }
+          - { name: "range", label: "Range", widget: "string" }
+          - { name: "txCapable", label: "Transmit Capable", widget: "boolean" }
+      - label: "Transmit Power"
+        name: "transmitPower"
+        widget: "list"
+        fields:
+          - { name: "mode", label: "Mode", widget: "string", required: false }
+          - { name: "watts", label: "Watts", widget: "number" }
+      - label: "Battery"
+        name: "battery"
+        widget: "object"
+        fields:
+          - { name: "capacityMah", label: "Capacity (mAh)", widget: "number", required: false }
+          - { name: "removable", label: "Removable", widget: "boolean", required: false }
+          - { name: "voltage", label: "Voltage", widget: "string", required: false }
+          - { name: "charging", label: "Charging", widget: "string" }
+      - { name: "antennaConnector", label: "Antenna Connector", widget: "string" }
+      - { name: "waterproofRating", label: "Waterproof Rating", widget: "string", required: false }
+      - label: "Programming"
+        name: "programming"
+        widget: "object"
+        fields:
+          - { name: "chirpSupport", label: "CHIRP Support", widget: "boolean" }
+          - { name: "cableType", label: "Cable Type", widget: "string" }
+          - { name: "manualProgramming", label: "Manual Programming", widget: "boolean" }
+          - { name: "pcSoftware", label: "PC Software", widget: "string", required: false }
+      - { name: "priceEstimate", label: "Price Estimate", widget: "string", required: false }
+      - label: "Purchase Links"
+        name: "purchaseLinks"
+        widget: "list"
+        fields:
+          - { name: "supplier", label: "Supplier", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+      - label: "Links"
+        name: "links"
+        widget: "object"
+        fields:
+          - { name: "productPage", label: "Product Page", widget: "string", required: false }
+          - { name: "userManual", label: "User Manual", widget: "string", required: false }
+          - { name: "datasheet", label: "Datasheet", widget: "string", required: false }
+          - { name: "programmingGuide", label: "Programming Guide", widget: "string", required: false }
+      - label: "Metadata"
+        name: "metadata"
+        widget: "object"
+        fields:
+          - { name: "releaseYear", label: "Release Year", widget: "number", required: false }
+          - { name: "countryOfOrigin", label: "Country of Origin", widget: "string", required: false }
+          - { name: "discontinued", label: "Discontinued", widget: "boolean", required: false }
+          - { name: "notes", label: "Notes", widget: "text", required: false }

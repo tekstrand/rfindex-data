@@ -1,0 +1,42 @@
+{
+  "id": "baofeng-bf-f8hp",
+  "brand": "Baofeng",
+  "model": "BF-F8HP",
+  "description": "An upgraded UV-5R with higher power output and improved antenna.",
+  "frequencyBands": [
+    { "band": "VHF", "range": "136–174 MHz", "txCapable": true },
+    { "band": "UHF", "range": "400–520 MHz", "txCapable": true }
+  ],
+  "transmitPower": [
+    { "mode": "Low", "watts": 1 },
+    { "mode": "Medium", "watts": 4 },
+    { "mode": "High", "watts": 8 }
+  ],
+  "battery": {
+    "capacityMah": 2000,
+    "removable": true,
+    "voltage": "7.4V",
+    "charging": "proprietary cradle"
+  },
+  "antennaConnector": "SMA-F",
+  "waterproofRating": "IP57",
+  "programming": {
+    "chirpSupport": true,
+    "cableType": "Kenwood 2-pin",
+    "manualProgramming": true,
+    "pcSoftware": "CHIRP"
+  },
+  "priceEstimate": "$65",
+  "purchaseLinks": [
+    { "supplier": "Amazon", "url": "https://www.amazon.com/dp/B01JPO1TZ4" },
+    { "supplier": "Radioddity", "url": "https://www.radioddity.com/products/bf-f8hp" }
+  ],
+  "links": {
+    "productPage": "https://baofengtech.com/bf-f8hp/",
+    "userManual": "https://baofengtech.com/manual/bf-f8hp.pdf"
+  },
+  "metadata": {
+    "releaseYear": 2018,
+    "countryOfOrigin": "China"
+  }
+}

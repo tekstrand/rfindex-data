@@ -1,0 +1,41 @@
+{
+  "id": "baofeng-uv-5r",
+  "brand": "Baofeng",
+  "model": "UV-5R",
+  "description": "A reliable, low-cost dual-band handheld radio ideal for beginners.",
+  "frequencyBands": [
+    { "band": "VHF", "range": "136–174 MHz", "txCapable": true },
+    { "band": "UHF", "range": "400–520 MHz", "txCapable": true }
+  ],
+  "transmitPower": [
+    { "mode": "Low", "watts": 1 },
+    { "mode": "High", "watts": 4 }
+  ],
+  "battery": {
+    "capacityMah": 1800,
+    "removable": true,
+    "voltage": "7.4V",
+    "charging": "proprietary cradle"
+  },
+  "antennaConnector": "SMA-F",
+  "waterproofRating": "None",
+  "programming": {
+    "chirpSupport": true,
+    "cableType": "Kenwood 2-pin",
+    "manualProgramming": true,
+    "pcSoftware": "CHIRP"
+  },
+  "priceEstimate": "$25",
+  "purchaseLinks": [
+    { "supplier": "Amazon", "url": "https://www.amazon.com/dp/B007H4VT7A" },
+    { "supplier": "Radioddity", "url": "https://www.radioddity.com/products/uv-5r" }
+  ],
+  "links": {
+    "productPage": "https://baofengtech.com/uv-5r/",
+    "userManual": "https://baofengtech.com/manual/uv-5r.pdf"
+  },
+  "metadata": {
+    "releaseYear": 2012,
+    "countryOfOrigin": "China"
+  }
+}
