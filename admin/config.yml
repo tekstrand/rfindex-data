@@ -1,5 +1,3 @@
-# DecapCMS Configuration for RFIndex
-
 local_backend: true
 
 backend:
@@ -9,68 +7,114 @@ media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "radios"
-    label: "Radios"
-    folder: "data/radios"
+  - name: "bands"
+    label: "Ham Radio Bands"
+    folder: "data/bands"
     create: true
-    slug: "{{slug}}"
     extension: "json"
     fields:
-      - { name: "id", label: "ID", widget: "string" }
-      - { name: "brand", label: "Brand", widget: "string" }
-      - { name: "model", label: "Model", widget: "string" }
-      - { name: "description", label: "Description", widget: "text", required: false }
-      - label: "Frequency Bands"
-        name: "frequencyBands"
+      - { name: "title", label: "Title", widget: "string" }
+      - label: "Wavelength"
+        name: "wavelength"
+        widget: "select"
+        options: ["LF", "MF", "HF", "VHF", "UHF", "SHF"]
+      - { label: "Lower Frequency",  name: "lower_frequency",  widget: "string" }
+      - { label: "Upper Frequency",  name: "upper_frequency",  widget: "string" }
+
+  - name: "manufacturers"
+    label: "Manufacturers"
+    folder: "data/manufacturers"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+
+  - name: "modulations"
+    label: "Modulations"
+    folder: "data/modulations"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+
+  - name: "antenna_connectors"
+    label: "Antenna Connectors"
+    folder: "data/antenna_connectors"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+
+  - name: "radios"
+    label: "Radios"
+    label_singular: "Radio"
+    folder: "data/radios"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Model Name", widget: "string" }
+      - { name: "mpn", label: "MPN", widget: "string", required: false }
+      - { name: "rigreference_id", label: "RigReference ID", widget: "number" }
+      - label: "Manufacturer"
+        name: "manufacturer"
+        widget: "relation"
+        collection: "manufacturers"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - label: "Supported Bands"
+        name: "supported_bands"
+        widget: "relation"
+        collection: "bands"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+        multiple: true
+      - { name: "memory_channels", label: "Memory Channels", widget: "number" }
+      - { name: "memory_banks", label: "Memory Banks", widget: "number" }
+      - label: "Frequency Ranges"
+        label_singular: "Frequency Range"
+        name: "frequency_ranges"
         widget: "list"
         fields:
-          - { name: "band", label: "Band", widget: "string" }
-          - { name: "range", label: "Range", widget: "string" }
-          - { name: "txCapable", label: "Transmit Capable", widget: "boolean" }
-      - label: "Transmit Power"
-        name: "transmitPower"
+          - { name: "tx", label: "TX supported", widget: "boolean", default: true }
+          - { name: "lower", label: "Lower Frequency", widget: "number", hint: "in MHz e.g. 144" }
+          - { name: "upper", label: "Upper Frequency", widget: "number", hint: "in MHz e.g. 148" }
+      - label: "Modulations"
+        name: "modulations"
+        widget: "relation"
+        collection: "modulations"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+        multiple: true
+      - name: "output_power"
+        label: "Output Powers"
+        label_singular: "Output Power"
         widget: "list"
-        fields:
-          - { name: "mode", label: "Mode", widget: "string", required: false }
-          - { name: "watts", label: "Watts", widget: "number" }
-      - label: "Battery"
-        name: "battery"
+        field: { name: "watt", label: "Watts", widget: "number", value_type: "float", step: 0.1 }
+      - label: "Antenna Connector"
+        name: "antenna_connector"
+        widget: "relation"
+        collection: "antenna_connectors"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - { name: "antenna_impedance_ohm", label: "Antenna Impedance (Ω)", widget: "number" }
+      - { name: "operating_voltage", label: "Operating Voltage", widget: "number", value_type: "float", step: 0.1 }
+      - { name: "battery_capacity_mah", label: "Battery Capacity (mAh)", widget: "number" }
+      - label: "Dimensions"
+        name: "dimensions"
         widget: "object"
         fields:
-          - { name: "capacityMah", label: "Capacity (mAh)", widget: "number", required: false }
-          - { name: "removable", label: "Removable", widget: "boolean", required: false }
-          - { name: "voltage", label: "Voltage", widget: "string", required: false }
-          - { name: "charging", label: "Charging", widget: "string" }
-      - { name: "antennaConnector", label: "Antenna Connector", widget: "select", options: ["SMA-F", "SMA-M", "BNC", "N-Type", "Proprietary", "None"] }
-      - { name: "waterproofRating", label: "Waterproof Rating", widget: "select", options: ["Unknown", "None", "IP54", "IP57", "IP67"], required: false }
-      - label: "Programming"
-        name: "programming"
-        widget: "object"
-        fields:
-          - { name: "chirpSupport", label: "CHIRP Support", widget: "boolean" }
-          - { name: "cableType", label: "Cable Type", widget: "select", options: ["Kenwood 2-pin", "USB-C", "Proprietary"] }
-          - { name: "manualProgramming", label: "Manual Programming", widget: "boolean" }
-          - { name: "pcSoftware", label: "PC Software", widget: "string", required: false }
-      - { name: "priceEstimate", label: "Price Estimate", widget: "string", required: false }
-      - label: "Purchase Links"
-        name: "purchaseLinks"
-        widget: "list"
-        fields:
-          - { name: "supplier", label: "Supplier", widget: "string" }
-          - { name: "url", label: "URL", widget: "string" }
-      - label: "Links"
-        name: "links"
-        widget: "object"
-        fields:
-          - { name: "productPage", label: "Product Page", widget: "string", required: false }
-          - { name: "userManual", label: "User Manual", widget: "string", required: false }
-          - { name: "datasheet", label: "Datasheet", widget: "string", required: false }
-          - { name: "programmingGuide", label: "Programming Guide", widget: "string", required: false }
-      - label: "Metadata"
-        name: "metadata"
-        widget: "object"
-        fields:
-          - { name: "releaseYear", label: "Release Year", widget: "number", required: false }
-          - { name: "countryOfOrigin", label: "Country of Origin", widget: "string", required: false }
-          - { name: "discontinued", label: "Discontinued", widget: "boolean", required: false }
-          - { name: "notes", label: "Notes", widget: "text", required: false }
+          - { name: "width", label: "Width", widget: "number", hint: "mm" }
+          - { name: "height", label: "Height", widget: "number", hint: "mm" }
+          - { name: "depth", label: "Depth", widget: "number", hint: "mm" }
+      - { name: "weight", label: "Weight", widget: "number", hint: "grams" }
+      - label: "Form Factor"
+        name: "form_factor"
+        widget: "select"
+        options: ["Handheld", "Mobile", "Base", "Portable", "SDR", "Other"]
+      - { name: "manufactured_start_year", label: "Manufactured Start Year", widget: "number", required: false }
+      - { name: "manufactured_end_year", label: "Manufactured End Year", widget: "number", required: false }
+      - { name: "manufactured_country", label: "Manufactured Country", widget: "string", required: false }
