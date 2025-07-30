@@ -1,0 +1,42 @@
+{
+  "purchase_urls": [
+    {
+      "supplier": "Amazon",
+      "url": "https://amzn.to/3Yg442Y"
+    }
+  ],
+  "price": {
+    "min": 17.99,
+    "max": 34.99,
+    "currency": "USD"
+  },
+  "model": "LoRa 32 V3.0 / V3.1",
+  "specifications": {
+    "lora_frequencies": [
+      "144 MHz",
+      "868 MHz",
+      "915 MHz"
+    ],
+    "microcontroller": "ESP32",
+    "power_consumption": "Average",
+    "battery": {
+      "type": "External"
+    },
+    "antenna": "u.FL/IPEX",
+    "interfaces": [
+      "SPI"
+    ]
+  },
+  "manufacturer": "HELTEC",
+  "title": "LoRa 32 V3",
+  "image": "images/heltec-32-v3.webp",
+  "description": "Compact ESP32 LoRa development board with onboard OLED and battery management",
+  "features": [
+    "GPS supported!",
+    "OLED Display",
+    "GPS"
+  ],
+  "category": [
+    "DIY"
+  ]
+}

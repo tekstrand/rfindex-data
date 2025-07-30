@@ -9,6 +9,7 @@ public_folder: "/img"
 collections:
   - name: "bands"
     label: "Ham Radio Bands"
+    label_singular: "Ham Radio Band"
     folder: "data/bands"
     create: true
     extension: "json"
@@ -23,7 +24,26 @@ collections:
 
   - name: "manufacturers"
     label: "Manufacturers"
+    label_singular: "Manufacturer"
     folder: "data/manufacturers"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+
+  - name: "meshtastic_manufacturers"
+    label: "Meshtastic Manufacturers"
+    label_singular: "Meshtastic Manufacturer"
+    folder: "data/meshtastic_manufacturers"
+    create: true
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+
+  - name: "suppliers"
+    label: "Suppliers"
+    label_singular: "Supplier"
+    folder: "data/suppliers"
     create: true
     extension: "json"
     fields:
@@ -39,6 +59,7 @@ collections:
 
   - name: "antenna_connectors"
     label: "Antenna Connectors"
+    label_singular: "Antenna Connector"
     folder: "data/antenna_connectors"
     create: true
     extension: "json"
@@ -118,3 +139,117 @@ collections:
       - { name: "manufactured_start_year", label: "Manufactured Start Year", widget: "number", required: false }
       - { name: "manufactured_end_year", label: "Manufactured End Year", widget: "number", required: false }
       - { name: "manufactured_country", label: "Manufactured Country", widget: "string", required: false }
+
+  - name: "meshtastic_features"
+    label: "Meshtastic Features"
+    label_singular: "Meshtastic Feature"
+    folder: "data/meshtastic_features"
+    create: true
+    extension: "json"
+    fields:
+      - name: "title"
+        label: "Name"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+
+  - name: "meshtastic_devices"
+    label: "Meshtastic Devices"
+    label_singular: "Meshtastic Device"
+    folder: "data/meshtastic_devices"
+    create: true
+    slug: "{{fields.title}}-{{fields.manufacturer}}"
+    extension: "json"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - label: "Manufacturer"
+        name: "manufacturer"
+        widget: "relation"
+        collection: "meshtastic_manufacturers"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+      - { name: "model", label: "Model", widget: "string" }
+      - { name: "description", label: "Description", widget: "text", required: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["DIY", "Complete", "Solar", "Standalone"]
+        multiple: true
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        media_folder: "images"
+        media_library:
+          config:
+            multiple: false
+            max_file_size: 200000
+      - label: "Purchase URLs"
+        name: "purchase_urls"
+        widget: "list"
+        fields:
+          - name: "supplier"
+            label: "Supplier"
+            widget: "relation"
+            collection: "suppliers"
+            searchFields: ["title"]
+            valueField: "title"
+            displayFields: ["title"]
+          - { name: "url", label: "URL", widget: "string" }
+      - label: "Price"
+        name: "price"
+        widget: "object"
+        fields:
+          - { name: "min", label: "Minimum Price", widget: "number", value_type: "float", step: .01 }
+          - { name: "max", label: "Maximum Price", widget: "number", value_type: "float", step: .01 }
+          - { name: "currency", label: "Currency", widget: "string" }
+      - label: "Specifications"
+        name: "specifications"
+        widget: "object"
+        fields:
+          - label: "LoRa Frequencies"
+            name: "lora_frequencies"
+            widget: "select"
+            options: ["144 MHz", "433 MHz", "868 MHz", "915 MHz", "2.4 GHz"]
+            multiple: true
+          - label: "Microcontroller"
+            name: "microcontroller"
+            widget: "select"
+            options: ["ARM Cortex-M4", "ESP32", "ESP32-S3", "Raspberry Pi 5", "nRF52"]
+            required: false
+          - label: "Power Consumption"
+            name: "power_consumption"
+            widget: "select"
+            options: ["Low", "Average", "High"]
+          - label: "Battery"
+            name: "battery"
+            widget: "object"
+            fields:
+              - name: "type"
+                label: "Type"
+                widget: "select"
+                options: ["External", "LiPo", "18650", "Lithium Ion", "None"]
+              - { name: "capacity_mAh", label: "Capacity (mAh)", widget: "number", required: false }
+              - { name: "estimated_runtime", label: "Estimated Runtime", widget: "string", required: false }
+          - label: "Antenna Connector"
+            name: "antenna"
+            widget: "relation"
+            collection: "antenna_connectors"
+            searchFields: ["title"]
+            valueField: "title"
+            displayFields: ["title"]
+          - label: "Interfaces"
+            name: "interfaces"
+            widget: "select"
+            options: ["USB-C", "GPIO", "I2C", "SPI", "UART", "PWM", "Ethernet", "M8 5-pin connector", "Proprietary", "QWIIC", "3.5mm"]
+            multiple: true
+            optional: true
+      - label: "Features"
+        name: "features"
+        widget: "relation"
+        collection: "meshtastic_features"
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
+        multiple: true
