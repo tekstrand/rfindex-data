@@ -1,0 +1,42 @@
+{
+  "purchase_urls": [
+    {
+      "supplier": "AtlaVox",
+      "url": "https://atlavox.com/products/atlavox-beacon-solar-meshtastic-node"
+    }
+  ],
+  "price": {
+    "min": 247.0,
+    "max": 300.0,
+    "currency": "USD"
+  },
+  "model": "Beacon Solar",
+  "specifications": {
+    "lora_frequencies": [
+      "915 MHz"
+    ],
+    "microcontroller": "nRF52",
+    "power_consumption": "Low",
+    "battery": {
+      "type": "LiPo"
+    },
+    "antenna": "External via SMA connector",
+    "interfaces": [
+      "USB-C"
+    ]
+  },
+  "manufacturer": "AtlaVox",
+  "title": "AtlaVox Beacon Solar Meshtastic Node",
+  "image": "/devices/atlavox-beacon.webp",
+  "features": [
+    "Bluetooth",
+    "SX1262",
+    "GPS support",
+    "Solar"
+  ],
+  "category": [
+    "Complete",
+    "Solar"
+  ],
+  "description": "Solar-powered Meshtastic node featuring RAK19007/4631 WisBlock 915MHz module, integrated 5W solar panel, IP67 aluminum enclosure, and versatile mounting options for outdoor use."
+}

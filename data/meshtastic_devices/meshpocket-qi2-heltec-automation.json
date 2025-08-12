@@ -1,0 +1,40 @@
+{
+  "purchase_urls": [
+    {
+      "supplier": "Heltec Automation",
+      "url": "https://heltec.org/products/meshpocket"
+    }
+  ],
+  "price": {
+    "min": 49.99,
+    "max": 59.99,
+    "currency": "USD"
+  },
+  "model": "MeshPocket Qi2",
+  "specifications": {
+    "lora_frequencies": [
+      "868 MHz",
+      "915 MHz"
+    ],
+    "microcontroller": "nRF52",
+    "power_consumption": "extremely low power",
+    "battery": {
+      "type": "LiPo"
+    },
+    "antenna": "Internal",
+    "interfaces": [
+      "USB-C"
+    ]
+  },
+  "manufacturer": "Heltec Automation",
+  "title": "MeshPocket Qi2",
+  "image": "/devices/heltec-meshpocket-qi2.webp",
+  "features": [
+    "Bluetooth",
+    "E-Ink Display",
+    "SX1262"
+  ],
+  "category": [
+    "Complete"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "purchase_urls": [
+    {
+      "supplier": "SeeedStudio",
+      "url": "https://www.seeedstudio.com/Wio-Tracker-1110-Dev-Board-p-5799.html?sensecap_affiliate=WMeIXYu&referring_service=link"
+    }
+  ],
+  "price": {
+    "min": 29.0,
+    "max": 39.0,
+    "currency": "USD"
+  },
+  "model": "Wio Tracker 1110",
+  "specifications": {
+    "lora_frequencies": [
+      "868 MHz",
+      "915 MHz"
+    ],
+    "microcontroller": "nRF52",
+    "power_consumption": "extremely low power",
+    "battery": {
+      "type": "external"
+    },
+    "antenna": "SMA antenna connector and U.FL/IPEX",
+    "interfaces": [
+      "USB-C",
+      "GPIO",
+      "I2C",
+      "SPI",
+      "UART"
+    ]
+  },
+  "manufacturer": "SeeedStudio",
+  "title": "Wio Tracker 1110",
+  "image": "/devices/wio-tracker-1110-dev-board.webp",
+  "features": [
+    "Bluetooth",
+    "GPS",
+    "SX1262"
+  ],
+  "category": [
+    "DIY"
+  ]
+}

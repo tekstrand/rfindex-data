@@ -1,0 +1,52 @@
+{
+  "purchase_urls": [
+    {
+      "supplier": "Rokland",
+      "url": "https://store.rokland.com/products/rakwireless-rak11200-wifi-and-ble-espressif-esp32-wrover-pid-110023?ref=rfindex"
+    },
+    {
+      "supplier": "AliExpress",
+      "url": "https://s.click.aliexpress.com/e/_oCPUcap"
+    },
+    {
+      "supplier": "RAKwireless",
+      "url": "https://rakwireless.kckb.st/rfindex-u3r"
+    }
+  ],
+  "price": {
+    "min": 34.0,
+    "max": 68.0,
+    "currency": "USD"
+  },
+  "model": "WiFi MQTT Gateway",
+  "specifications": {
+    "lora_frequencies": [
+      "868 MHz",
+      "915 MHz"
+    ],
+    "microcontroller": "ESP32",
+    "power_consumption": "Average",
+    "battery": {
+      "type": "External"
+    },
+    "antenna": "External via SMA connector",
+    "interfaces": [
+      "USB-C",
+      "M8 5-pin connector"
+    ]
+  },
+  "manufacturer": "RAKwireless",
+  "title": "WisMesh WiFi MQTT Gateway",
+  "image": "/devices/wismesh-wifi-gateway.webp",
+  "features": [
+    "WiFi",
+    "Bluetooth",
+    "SX1262",
+    "GPS support"
+  ],
+  "category": [
+    "Complete",
+    "DIY"
+  ],
+  "description": "WiFi-connected MQTT gateway to bridge LoRa networks with the cloud."
+}

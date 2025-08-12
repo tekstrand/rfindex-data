@@ -180,12 +180,14 @@ collections:
       - label: "Image"
         name: "image"
         widget: "image"
+        required: false
         media_folder: "images"
         media_library:
           config:
             multiple: false
             max_file_size: 200000
-      - label: "Purchase URLs"
+      - label: "Suppliers"
+        label_singular: "Supplier"
         name: "purchase_urls"
         widget: "list"
         fields:
@@ -229,7 +231,7 @@ collections:
               - name: "type"
                 label: "Type"
                 widget: "select"
-                options: ["External", "LiPo", "18650", "Lithium Ion", "None"]
+                options: ["18650 Li-ion", "DIY", "External", "Li-ion", "LiPo", "LTO", "None"]
               - { name: "capacity_mAh", label: "Capacity (mAh)", widget: "number", required: false }
               - { name: "estimated_runtime", label: "Estimated Runtime", widget: "string", required: false }
           - label: "Antenna Connector"
@@ -242,7 +244,26 @@ collections:
           - label: "Interfaces"
             name: "interfaces"
             widget: "select"
-            options: ["USB-C", "GPIO", "I2C", "SPI", "UART", "PWM", "Ethernet", "M8 5-pin connector", "Proprietary", "QWIIC", "3.5mm"]
+            options:
+              - "3.5mm audio"
+              - "Bluetooth Low Energy (BLE)"
+              - "E-Ink"
+              - "Ethernet"
+              - "GPIO"
+              - "Grove"
+              - "I2C"
+              - "LAN"
+              - "M8 5-pin connector"
+              - "Microphone"
+              - "MicroSD"
+              - "Proprietary USB magnetic charging cable"
+              - "PWM"
+              - "Qwiic"
+              - "Speaker"
+              - "SPI"
+              - "UART"
+              - "Micro USB"
+              - "USB-C"
             multiple: true
             optional: true
       - label: "Features"
@@ -253,3 +274,4 @@ collections:
         valueField: "title"
         displayFields: ["title"]
         multiple: true
+        required: false
