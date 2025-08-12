@@ -5,3 +5,4 @@ This repository is a proof-of-concept for using Decap CMS to manage the `radios`
 ## Setup
 
 1. `serve . -l 8080`
+2. `npx netlify-cms-proxy-server`
