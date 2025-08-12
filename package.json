@@ -1,0 +1,24 @@
+{
+  "name": "rfindex-data",
+  "version": "1.0.0",
+  "description": "a proof-of-concept for using Decap CMS to manage the radios data for rfindex.com.",
+  "homepage": "https://github.com/tekstrand/rfindex-data#readme",
+  "bugs": {
+    "url": "https://github.com/tekstrand/rfindex-data/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekstrand/rfindex-data.git"
+  },
+  "license": "ISC",
+  "author": "Tommy Ekstrand",
+  "type": "commonjs",
+  "main": "admin/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "netlify-cms-proxy-server": "^1.3.24",
+    "serve": "^14.2.4"
+  }
+}
