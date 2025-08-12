@@ -15,7 +15,9 @@
   "type": "commonjs",
   "main": "admin/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-web": "serve . -l 8080",
+    "serve-proxy": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
     "netlify-cms-proxy-server": "^1.3.24",
