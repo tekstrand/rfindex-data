@@ -155,12 +155,17 @@ collections:
         widget: "text"
 
   - name: "meshtastic_devices"
+    create: true
+    extension: "json"
+    folder: "data/meshtastic_devices"
     label: "Meshtastic Devices"
     label_singular: "Meshtastic Device"
-    folder: "data/meshtastic_devices"
-    create: true
     slug: "{{fields.title}}-{{fields.manufacturer}}"
-    extension: "json"
+    summary: "{{manufacturer}} - {{model}}"
+    sortable_fields: ["manufacturer", "title", "model"]
+    view_groups: 
+      - label: Manufacturer
+        field: manufacturer
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - label: "Manufacturer"
