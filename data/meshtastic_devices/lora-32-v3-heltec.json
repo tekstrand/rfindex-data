@@ -1,5 +1,8 @@
 {
   "id": "heltec-lora-32-v3",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",

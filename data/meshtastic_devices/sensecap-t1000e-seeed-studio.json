@@ -1,5 +1,8 @@
 {
   "id": "seeedstudio-sensecap-t1000e",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Amazon",
@@ -15,8 +18,8 @@
     }
   ],
   "price": {
-    "min": 35.0,
-    "max": 45.0,
+    "min": 35,
+    "max": 45,
     "currency": "USD"
   },
   "model": "SenseCAP T1000e",

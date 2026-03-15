@@ -1,5 +1,8 @@
 {
   "id": "wismesh-ethernet-mqtt-gateway",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",
@@ -15,8 +18,8 @@
     }
   ],
   "price": {
-    "min": 43.0,
-    "max": 114.0,
+    "min": 43,
+    "max": 114,
     "currency": "USD"
   },
   "model": "Ethernet MQTT Gateway",

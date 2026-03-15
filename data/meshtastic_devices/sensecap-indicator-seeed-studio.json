@@ -1,5 +1,8 @@
 {
   "id": "seeedstudio-sensecap-indicator",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "AliExpress",
@@ -11,8 +14,8 @@
     }
   ],
   "price": {
-    "min": 49.0,
-    "max": 89.0,
+    "min": 49,
+    "max": 89,
     "currency": "USD"
   },
   "model": "SenseCAP Indicator",

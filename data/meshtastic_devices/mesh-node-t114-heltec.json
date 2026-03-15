@@ -1,5 +1,8 @@
 {
   "id": "heltec-mesh-node-t114",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",

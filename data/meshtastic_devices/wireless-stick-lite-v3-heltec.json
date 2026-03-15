@@ -1,5 +1,8 @@
 {
   "id": "heltec-wireless-stick-lite-v3",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",

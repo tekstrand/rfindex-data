@@ -1,5 +1,8 @@
 {
   "id": "lilygo-t-beam-v1-1",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",

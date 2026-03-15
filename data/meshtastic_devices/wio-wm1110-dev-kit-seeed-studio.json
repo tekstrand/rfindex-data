@@ -1,5 +1,8 @@
 {
   "id": "seeedstudio-wio-wm1110-dev-kit",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "AliExpress",
@@ -11,8 +14,8 @@
     }
   ],
   "price": {
-    "min": 32.0,
-    "max": 49.0,
+    "min": 32,
+    "max": 49,
     "currency": "USD"
   },
   "model": "Wio-WM1110 Dev Kit",

@@ -1,5 +1,8 @@
 {
   "id": "heltec-vision-master-e290",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Rokland",

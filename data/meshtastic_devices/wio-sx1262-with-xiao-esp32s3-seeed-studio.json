@@ -1,5 +1,8 @@
 {
   "id": "seeedstudio-wio-sx1262-xiao-esp32s3",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "AliExpress",

@@ -1,5 +1,8 @@
 {
   "id": "atlavox-m1",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "AtlaVox",

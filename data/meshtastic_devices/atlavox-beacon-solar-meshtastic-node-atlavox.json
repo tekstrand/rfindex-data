@@ -1,5 +1,8 @@
 {
   "id": "atlavox-beacon-solar",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "AtlaVox",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 247.0,
-    "max": 300.0,
+    "min": 247,
+    "max": 300,
     "currency": "USD"
   },
   "model": "Beacon Solar",

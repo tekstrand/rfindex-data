@@ -1,5 +1,8 @@
 {
   "id": "muzi-works-r1",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "muzi ᴡᴏʀᴋꜱ",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 79.0,
-    "max": 79.0,
+    "min": 79,
+    "max": 79,
     "currency": "USD"
   },
   "model": "R1",

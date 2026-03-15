@@ -1,5 +1,8 @@
 {
   "id": "sensecap-solar-node-p1-pro",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Seeed Studio",

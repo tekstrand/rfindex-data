@@ -1,5 +1,8 @@
 {
   "id": "voltaic-enclosures-3w-solar-lto-basestation",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "VoltaicEnclosures",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 455.0,
-    "max": 455.0,
+    "min": 455,
+    "max": 455,
     "currency": "USD"
   },
   "model": "3W Solar LTO Basestation",

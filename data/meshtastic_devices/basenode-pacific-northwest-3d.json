@@ -1,5 +1,8 @@
 {
   "id": "pacific-nw-3d-basenode",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Pacific Northwest 3D",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 70.0,
-    "max": 70.0,
+    "min": 70,
+    "max": 70,
     "currency": "USD"
   },
   "model": "Basenode Heltec V3 LoRa",

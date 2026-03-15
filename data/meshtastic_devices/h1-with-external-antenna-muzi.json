@@ -1,5 +1,8 @@
 {
   "id": "muzi-works-h1-heltec-v3-whip-antenna",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "muzi ᴡᴏʀᴋꜱ",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 75.0,
-    "max": 75.0,
+    "min": 75,
+    "max": 75,
     "currency": "USD"
   },
   "model": "H1 - Heltec V3",

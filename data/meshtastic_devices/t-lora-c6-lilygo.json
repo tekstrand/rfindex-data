@@ -1,5 +1,8 @@
 {
   "id": "lilygo-t-lora-c6",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "LilyGo",
@@ -7,7 +10,7 @@
     }
   ],
   "price": {
-    "min": 18.0,
+    "min": 18,
     "max": 24.99,
     "currency": "USD"
   },

@@ -1,5 +1,8 @@
 {
   "id": "seeedstudio-wio-tracker-1110",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "Seeed Studio",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 29.0,
-    "max": 39.0,
+    "min": 29,
+    "max": 39,
     "currency": "USD"
   },
   "model": "Wio Tracker 1110",

@@ -1,5 +1,8 @@
 {
   "id": "spec5-spectre",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "SpecFive LLC",

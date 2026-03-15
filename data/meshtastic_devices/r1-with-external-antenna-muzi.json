@@ -1,5 +1,8 @@
 {
   "id": "muzi-works-r1-external-antenna",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "muzi ᴡᴏʀᴋꜱ",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 89.0,
-    "max": 89.0,
+    "min": 89,
+    "max": 89,
     "currency": "USD"
   },
   "model": "R1 with External Antenna",

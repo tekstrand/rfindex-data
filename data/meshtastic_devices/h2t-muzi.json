@@ -1,5 +1,8 @@
 {
   "id": "muzi-works-h2t-heltec-t114-gps-meshtastic",
+  "supported_firmware": [
+    "Meshtastic"
+  ],
   "purchase_urls": [
     {
       "supplier": "muzi ᴡᴏʀᴋꜱ",
@@ -7,8 +10,8 @@
     }
   ],
   "price": {
-    "min": 99.0,
-    "max": 99.0,
+    "min": 99,
+    "max": 99,
     "currency": "USD"
   },
   "model": "H2T - Heltec T114 V2",
