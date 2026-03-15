@@ -14,8 +14,8 @@
     }
   ],
   "price": {
-    "min": "14.90",
-    "max": "32.99",
+    "min": 14.90,
+    "max": 32.99,
     "currency": "USD"
   },
   "model": "Wireless Stick Lite V3",

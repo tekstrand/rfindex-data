@@ -23,7 +23,7 @@
     "lora_frequencies": [
       "868 MHz",
       "915 MHz",
-      "2.4GHz"
+      "2.4 GHz"
     ],
     "microcontroller": "ESP32",
     "power_consumption": "Average",

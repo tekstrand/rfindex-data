@@ -14,8 +14,8 @@
     }
   ],
   "price": {
-    "min": "17.90",
-    "max": "24.97",
+    "min": 17.90,
+    "max": 24.97,
     "currency": "USD"
   },
   "model": "HT-VMT190",

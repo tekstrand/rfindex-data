@@ -17,7 +17,7 @@
       "868 MHz"
     ],
     "microcontroller": "ESP32",
-    "power_consumption": "Average consumption",
+    "power_consumption": "Average",
     "battery": {
       "type": "LiPo"
     },

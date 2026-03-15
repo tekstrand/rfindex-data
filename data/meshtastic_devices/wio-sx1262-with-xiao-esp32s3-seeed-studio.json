@@ -10,8 +10,8 @@
     }
   ],
   "price": {
-    "min": "9.90",
-    "max": "9.90",
+    "min": 9.90,
+    "max": 9.90,
     "currency": "USD"
   },
   "model": "Wio SX1262 + XIAO ESP32S3",

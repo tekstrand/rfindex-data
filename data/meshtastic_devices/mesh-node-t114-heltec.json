@@ -14,8 +14,8 @@
     }
   ],
   "price": {
-    "min": "27.90",
-    "max": "49.90",
+    "min": 27.90,
+    "max": 49.90,
     "currency": "USD"
   },
   "model": "Mesh Node T114 (Rev. 2.0)",

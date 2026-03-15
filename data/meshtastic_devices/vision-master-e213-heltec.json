@@ -14,8 +14,8 @@
     }
   ],
   "price": {
-    "min": "18.90",
-    "max": "29.90",
+    "min": 18.90,
+    "max": 29.90,
     "currency": "USD"
   },
   "model": "HT-VME213",

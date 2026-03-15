@@ -17,7 +17,7 @@
       "868 MHz"
     ],
     "microcontroller": "nRF52",
-    "power_consumption": "Average consumption, over 2 days of battery life with GPS enabled",
+    "power_consumption": "Average",
     "battery": {
       "type": "LiPo"
     },

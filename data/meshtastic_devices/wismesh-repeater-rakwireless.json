@@ -31,7 +31,7 @@
     "microcontroller": "nRF52",
     "power_consumption": "Low",
     "battery": {
-      "type": "Li-Ion w/ integrated heater & bms"
+      "type": "Li-ion"
     },
     "antenna": "Unknown",
     "interfaces": [
