@@ -15,6 +15,7 @@ const collections = {
   antenna_connectors:       { schema: "antenna_connectors.json",       dir: "antenna_connectors" },
   radios:                   { schema: "radios.json",                   dir: "radios" },
   meshtastic_features:      { schema: "meshtastic_features.json",      dir: "meshtastic_features" },
+  meshtastic_antennas:      { schema: "meshtastic_antennas.json",      dir: "meshtastic_antennas" },
   meshtastic_devices:       { schema: "meshtastic_devices.json",       dir: "meshtastic_devices" },
 };
 
