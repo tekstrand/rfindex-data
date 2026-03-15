@@ -1,4 +1,5 @@
 {
+  "id": "heltec-vision-master-e213",
   "purchase_urls": [
     {
       "supplier": "Rokland",
@@ -14,8 +15,8 @@
     }
   ],
   "price": {
-    "min": 18.90,
-    "max": 29.90,
+    "min": 18.9,
+    "max": 29.9,
     "currency": "USD"
   },
   "model": "HT-VME213",

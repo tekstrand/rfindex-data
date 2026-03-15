@@ -1,4 +1,5 @@
 {
+  "id": "meshtech-b1",
   "purchase_urls": [
     {
       "supplier": "Meshtech",
@@ -10,8 +11,8 @@
     }
   ],
   "price": {
-    "min": 60.00,
-    "max": 75.00,
+    "min": 60.0,
+    "max": 75.0,
     "currency": "USD"
   },
   "model": "B1",
