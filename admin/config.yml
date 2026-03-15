@@ -278,3 +278,96 @@ collections:
         displayFields: ["title"]
         multiple: true
         required: false
+
+  - name: "meshtastic_antennas"
+    label: "Meshtastic Antennas"
+    label_singular: "Meshtastic Antenna"
+    folder: "data/meshtastic_antennas"
+    create: true
+    extension: "json"
+    slug: "{{fields.slug}}"
+    summary: "{{manufacturer.brand_name}} - {{title}}"
+    sortable_fields: ["title", "manufacturer"]
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL slug used for routing. Must be unique." }
+      - { name: "title", label: "Title", widget: "string" }
+      - label: "Manufacturer"
+        name: "manufacturer"
+        widget: "object"
+        fields:
+          - { name: "brand_name", label: "Brand Name", widget: "string" }
+          - { name: "url", label: "URL", widget: "string", required: false }
+          - { name: "part_number", label: "Part Number", widget: "string" }
+          - { name: "description", label: "Description", widget: "string" }
+          - label: "Frequency Spec"
+            name: "freq_spec"
+            widget: "list"
+            field: { name: "freq", label: "Frequency Range", widget: "string" }
+          - { name: "datasheet", label: "Datasheet URL", widget: "string" }
+      - label: "Suppliers"
+        label_singular: "Supplier"
+        name: "suppliers"
+        widget: "list"
+        fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "part_number", label: "Part Number", widget: "string", required: false }
+          - { name: "purchase_cost", label: "Purchase Cost", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
+      - label: "Test Results"
+        label_singular: "Test Result"
+        name: "test_results"
+        widget: "list"
+        fields:
+          - label: "Markers"
+            label_singular: "Marker"
+            name: "markers"
+            widget: "list"
+            fields:
+              - { name: "frequency", label: "Frequency", widget: "string" }
+              - { name: "vswr", label: "VSWR", widget: "string" }
+          - { name: "notes", label: "Notes", widget: "text" }
+          - label: "Metadata"
+            name: "metadata"
+            widget: "object"
+            fields:
+              - { name: "tester", label: "Tester", widget: "string" }
+              - { name: "date", label: "Date", widget: "string" }
+      - { name: "suggested", label: "Suggested", widget: "boolean", required: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        required: false
+        options:
+          - "Internal Device Antennas"
+          - "Fixed (Base) Antennas"
+          - "Portable Antennas"
+          - "Vehicle Antennas"
+      - { name: "pdf", label: "PDF", widget: "string", required: false }
+      - label: "Dimensions"
+        name: "dimensions"
+        widget: "object"
+        required: false
+        fields:
+          - { name: "length", label: "Length (mm)", widget: "number", value_type: "float" }
+          - { name: "width", label: "Width (mm)", widget: "number", value_type: "float", required: false }
+      - label: "Connector Type"
+        name: "connector_type"
+        widget: "select"
+        options:
+          - "u.FL/IPEX"
+          - "N-Type Male"
+          - "N-Type Female"
+          - "SMA Male"
+          - "RP-SMA Male"
+          - "NMO"
+      - { name: "gain", label: "Gain", widget: "string", required: false }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
+        media_folder: "images"
+        media_library:
+          config:
+            multiple: false
+            max_file_size: 200000
+      - { name: "description", label: "Description", widget: "text", required: false }
