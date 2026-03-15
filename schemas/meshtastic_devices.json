@@ -1,11 +1,12 @@
 {
 "type": "object",
   "required": [
-    "title", "manufacturer", "model", "category",
+    "id", "title", "manufacturer", "model", "category",
     "purchase_urls", "price", "specifications"
   ],
   "additionalProperties": false,
   "properties": {
+    "id": { "type": "string", "minLength": 1 },
     "title": { "type": "string", "minLength": 1 },
     "manufacturer": { "type": "string", "minLength": 1 },
     "model": { "type": "string", "minLength": 1 },
