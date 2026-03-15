@@ -4,14 +4,19 @@
 
 This is the data repository for [rfindex.com](https://rfindex.com) — a reference site for amateur radio and Meshtastic equipment. All content is stored as flat JSON files under `data/` and managed via a Decap CMS admin UI defined in `admin/`.
 
-There is no build step, no application code, and no tests. The repo is purely data + CMS configuration.
+There is no build step and no application code. The repo is purely data + CMS configuration + JSON Schema validation.
 
 ## Repository structure
 
 ```
 admin/
-  config.yml      # Decap CMS collection/field definitions (source of truth for schemas)
+  config.yml      # Decap CMS collection/field definitions (source of truth for field types)
   index.html      # CMS entry point (loads Decap CMS from CDN)
+schemas/            # JSON Schema files — one per collection, used by validation script
+scripts/
+  validate.js     # Validates all data/ JSON files against their schemas
+.github/workflows/
+  validate.yml    # CI: runs npm test on PRs and pushes to main
 data/
   bands/              # Ham radio bands (2m, 70cm, etc.) — {title, wavelength, lower_frequency, upper_frequency}
   manufacturers/      # Ham radio manufacturers — {title}
@@ -51,6 +56,16 @@ data/
 - **Battery type**: 18650 Li-ion, DIY, External, Li-ion, LiPo, LTO, None
 - **Interfaces**: 3.5mm audio, Bluetooth Low Energy (BLE), E-Ink, Ethernet, GPIO, Grove, I2C, LAN, M8 5-pin connector, Microphone, MicroSD, Proprietary USB magnetic charging cable, PWM, Qwiic, Speaker, SPI, UART, Micro USB, USB-C
 
+## Validation
+
+```
+npm test
+```
+
+Runs `scripts/validate.js` which checks every JSON file in `data/` against its corresponding schema in `schemas/`. This also runs in CI on every PR via `.github/workflows/validate.yml`.
+
+When adding a new enum value to `admin/config.yml`, also update the corresponding schema in `schemas/`.
+
 ## Running locally
 
 ```
@@ -64,6 +79,6 @@ This runs `netlify-cms-proxy-server` (for local Git backend) and `serve` (static
 ## Common tasks
 
 - **Add a new device/radio/band/etc.**: Create a JSON file in the appropriate `data/` subdirectory following the schema in `config.yml`. Or use the CMS UI.
-- **Add a new enum option** (e.g. new microcontroller, interface, battery type): Update `admin/config.yml` under the relevant field's `options` list.
+- **Add a new enum option** (e.g. new microcontroller, interface, battery type): Update `admin/config.yml` under the relevant field's `options` list **and** the corresponding `schemas/*.json` enum array.
 - **Add a new collection**: Add a new section to `admin/config.yml` and create the corresponding `data/` subdirectory.
 - **Add a device image**: Place a `.webp` file (under 200KB) in `data/meshtastic_devices/images/` and reference it as `/devices/filename.webp` in the device JSON.

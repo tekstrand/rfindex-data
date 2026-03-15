@@ -15,11 +15,15 @@
   "type": "commonjs",
   "main": "admin/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/validate.js",
+    "validate": "node scripts/validate.js",
     "serve": "npx netlify-cms-proxy-server & npx serve admin -p 8080"
   },
   "dependencies": {
     "netlify-cms-proxy-server": "^1.3.24",
     "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "ajv": "^8.18.0"
   }
 }
