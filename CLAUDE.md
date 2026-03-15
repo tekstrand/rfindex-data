@@ -31,6 +31,8 @@ data/
   meshtastic_features/      # Feature tags (GPS, WiFi, etc.) — {title}
   meshtastic_devices/       # Meshtastic devices — complex schema (see config.yml "meshtastic_devices")
     images/                 # Device images (.webp, max 200KB)
+  meshtastic_antennas/      # Meshtastic antennas — complex schema (see config.yml "meshtastic_antennas")
+    images/                 # Antenna images (.webp, max 200KB)
   suppliers/                # Retailers/purchase sources — {title}
 ```
 
@@ -53,7 +55,9 @@ data/
 ### Valid enum values (from config.yml)
 - **Wavelength**: LF, MF, HF, VHF, UHF, SHF, UHF/SHF
 - **Form factor** (radios): Handheld, Mobile, Base, Portable, SDR, Other
-- **Category** (meshtastic): DIY, Complete, Solar, Standalone (multi-select)
+- **Category** (meshtastic_devices): DIY, Complete, Solar, Standalone (multi-select)
+- **Category** (meshtastic_antennas): Internal Device Antennas, Fixed (Base) Antennas, Portable Antennas, Vehicle Antennas
+- **Connector type** (meshtastic_antennas): u.FL/IPEX, N-Type Male, N-Type Female, SMA Male, RP-SMA Male, NMO
 - **LoRa frequencies**: 144 MHz, 433 MHz, 868 MHz, 915 MHz, 2.4 GHz
 - **Microcontroller**: ARM Cortex-M4, ESP32, ESP32-S3, Raspberry Pi 5, nRF52
 - **Power consumption**: Low, Average, High
@@ -82,7 +86,8 @@ This runs `netlify-cms-proxy-server` (for local Git backend) and `serve` (static
 
 ## Common tasks
 
-- **Add a new device/radio/band/etc.**: Create a JSON file in the appropriate `data/` subdirectory following the schema in `config.yml`. Or use the CMS UI.
+- **Add a new device/antenna/radio/band/etc.**: Create a JSON file in the appropriate `data/` subdirectory following the schema in `config.yml`. Or use the CMS UI. Antennas go in `data/meshtastic_antennas/` and their images in `data/meshtastic_antennas/images/`.
 - **Add a new enum option** (e.g. new microcontroller, interface, battery type): Update `admin/config.yml` under the relevant field's `options` list **and** the corresponding `schemas/*.json` enum array.
 - **Add a new collection**: Add a new section to `admin/config.yml` and create the corresponding `data/` subdirectory.
 - **Add a device image**: Place a `.webp` file (under 200KB) in `data/meshtastic_devices/images/` and reference it as `/devices/filename.webp` in the device JSON.
+- **Add an antenna image**: Place a `.webp` file (under 200KB) in `data/meshtastic_antennas/images/` and reference it as `/meshtastic/antennas/filename.webp` in the antenna JSON.
