@@ -3,8 +3,8 @@ local_backend: true
 backend:
   name: git-gateway
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: "data/meshtastic_devices/images"
+public_folder: "/devices"
 
 collections:
   - name: "bands"
@@ -239,13 +239,10 @@ collections:
                 options: ["18650 Li-ion", "DIY", "External", "Li-ion", "LiPo", "LTO", "None"]
               - { name: "capacity_mAh", label: "Capacity (mAh)", widget: "number", required: false }
               - { name: "estimated_runtime", label: "Estimated Runtime", widget: "string", required: false }
-          - label: "Antenna Connector"
+          - label: "Antenna"
             name: "antenna"
-            widget: "relation"
-            collection: "antenna_connectors"
-            searchFields: ["title"]
-            valueField: "title"
-            displayFields: ["title"]
+            widget: "string"
+            hint: "e.g. Internal, u.FL/IPEX, External via SMA connector"
           - label: "Interfaces"
             name: "interfaces"
             widget: "select"
