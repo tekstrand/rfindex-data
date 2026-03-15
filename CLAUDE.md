@@ -15,8 +15,12 @@ admin/
 schemas/            # JSON Schema files — one per collection, used by validation script
 scripts/
   validate.js     # Validates all data/ JSON files against their schemas
-.github/workflows/
-  validate.yml    # CI: runs npm test on PRs and pushes to main
+.github/
+  workflows/
+    validate.yml  # CI: runs npm test on PRs and pushes to main
+  CODEOWNERS        # Requires maintainer review on all PRs
+  pull_request_template.md
+  ISSUE_TEMPLATE/   # Structured forms for new devices and data corrections
 data/
   bands/              # Ham radio bands (2m, 70cm, etc.) — {title, wavelength, lower_frequency, upper_frequency}
   manufacturers/      # Ham radio manufacturers — {title}
@@ -38,7 +42,7 @@ data/
 - Images use descriptive kebab-case `.webp` filenames
 
 ### Data rules
-- `admin/config.yml` is the **canonical schema definition** — always check it before creating or modifying data files
+- `schemas/*.json` are the **canonical schema definitions** enforced by CI — always check them before creating or modifying data files. `admin/config.yml` defines CMS field types and must be kept in sync
 - Relation fields store the `title` string of the referenced collection entry (not a file path or ID)
 - Frequency values in `bands/` are strings with units: `"144 MHz"`. In `radios/` frequency_ranges, they are plain numbers in MHz
 - Prices are floats (not strings). Currency is always `"USD"`
@@ -47,7 +51,7 @@ data/
 - Device images are referenced as `/devices/filename.webp` in the JSON but stored at `data/meshtastic_devices/images/`
 
 ### Valid enum values (from config.yml)
-- **Wavelength**: LF, MF, HF, VHF, UHF, SHF
+- **Wavelength**: LF, MF, HF, VHF, UHF, SHF, UHF/SHF
 - **Form factor** (radios): Handheld, Mobile, Base, Portable, SDR, Other
 - **Category** (meshtastic): DIY, Complete, Solar, Standalone (multi-select)
 - **LoRa frequencies**: 144 MHz, 433 MHz, 868 MHz, 915 MHz, 2.4 GHz
