@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/tekstrand/rfindex-data.git"
   },
-  "license": "ISC",
+  "license": "CC-BY-NC-4.0",
   "author": "Tommy Ekstrand",
   "type": "commonjs",
   "main": "admin/index.html",
