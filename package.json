@@ -17,13 +17,16 @@
   "scripts": {
     "test": "node scripts/validate.js",
     "validate": "node scripts/validate.js",
-    "serve": "npx netlify-cms-proxy-server & npx serve admin -p 8080"
+    "serve": "npx netlify-cms-proxy-server & npx serve admin -p 8080",
+    "optimize-images": "node scripts/optimize-images.js",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "dependencies": {
     "netlify-cms-proxy-server": "^1.3.24",
     "serve": "^14.2.4"
   },
   "devDependencies": {
-    "ajv": "^8.18.0"
+    "ajv": "^8.18.0",
+    "sharp": "^0.34.5"
   }
 }

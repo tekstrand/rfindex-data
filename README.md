@@ -84,7 +84,25 @@ Each entry is a single JSON file. To contribute, you can edit files directly or 
 }
 ```
 
-Device images go in `data/meshtastic_devices/images/` as `.webp` files.
+Device images go in `data/meshtastic_devices/images/` as `.webp` files (max 200KB).
+
+### Image optimization
+
+A pre-commit hook automatically optimizes any staged `.webp` images in the device images directory. It resizes images to a max of 800px on the longest side, compresses at WebP quality 80, and rejects any image still over 200KB after optimization.
+
+To run image optimization manually on all images:
+
+```
+npm run optimize-images
+```
+
+Or on specific files:
+
+```
+node scripts/optimize-images.js data/meshtastic_devices/images/my-device.webp
+```
+
+After cloning the repo, run `npm install` to set up the git hooks automatically (via the `prepare` script).
 
 ### Using the CMS editor
 
