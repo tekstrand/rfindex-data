@@ -1,7 +1,8 @@
 {
   "id": "heltec-vision-master-t190",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

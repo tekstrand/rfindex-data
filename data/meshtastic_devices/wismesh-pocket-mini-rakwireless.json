@@ -1,7 +1,8 @@
 {
   "id": "wismesh-pocket-mini",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

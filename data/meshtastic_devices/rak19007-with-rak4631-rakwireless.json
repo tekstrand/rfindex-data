@@ -1,7 +1,8 @@
 {
   "id": "rak-rak19007-4631",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

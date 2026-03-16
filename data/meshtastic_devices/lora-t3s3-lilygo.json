@@ -1,7 +1,8 @@
 {
   "id": "lilygo-lora-t3s3",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

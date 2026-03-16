@@ -1,7 +1,8 @@
 {
   "id": "seeedstudio-wio-wm1110-dev-kit",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

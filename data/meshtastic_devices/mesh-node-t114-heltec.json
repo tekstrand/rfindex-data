@@ -1,7 +1,8 @@
 {
   "id": "heltec-mesh-node-t114",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {

@@ -1,7 +1,8 @@
 {
   "id": "heltec-wireless-paper-v1-1",
   "supported_firmware": [
-    "Meshtastic"
+    "Meshtastic",
+    "MeshCore"
   ],
   "purchase_urls": [
     {
