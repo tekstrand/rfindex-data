@@ -15,8 +15,8 @@
     }
   ],
   "price": {
-    "min": 69.9,
-    "max": 89.9,
+    "min": 74.99,
+    "max": 140.00,
     "currency": "USD"
   },
   "model": "Solar Node P1 Pro",
