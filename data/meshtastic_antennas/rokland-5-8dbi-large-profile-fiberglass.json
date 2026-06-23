@@ -1,5 +1,6 @@
 {
   "slug": "rokland-5-8dbi-large-profile-fiberglass",
+  "sort_order": 30,
   "title": "Rokland 5.8dBi Large Profile Fiberglass",
   "manufacturer": {
     "brand_name": "Rokland",
@@ -52,5 +53,6 @@
   "connector_type": "N-Type Male",
   "gain": "5.8 dBi",
   "image": "rokland-5-8dbi-large-profile-fiberglass.webp",
-  "description": "High-gain 915 MHz fiberglass antenna from Rokland. Large profile and solid VSWR across the ISM band make it ideal for base stations needing extended range."
+  "description": "Medium gain 915 MHz fiberglass antenna from Rokland. Large profile and solid VSWR across the ISM band make it ideal for base stations needing extended range.",
+  "commentary": "Solid performer and generally the very first fiberglass antenna we recommend to anyone looking for their first one. There are better antennas, but benefits diminish quickly from here while price generally increases quickly."
 }

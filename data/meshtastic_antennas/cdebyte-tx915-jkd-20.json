@@ -84,5 +84,6 @@
   "connector_type": "SMA Male",
   "gain": "3.5 dBi",
   "image": "cdebyte-tx915-jkd-20.webp",
-  "description": "Low-cost 915 MHz antenna from CDEBYTE. Performance varies significantly with orientation, with improved VSWR when bent at 90 degrees."
+  "description": "Low-cost 915 MHz antenna from CDEBYTE. Performance varies significantly with orientation, with improved VSWR when bent at 90 degrees.",
+  "commentary": "A very common antenna for handheld or pocket nodes, though we generally defer to the Gizont these days."
 }

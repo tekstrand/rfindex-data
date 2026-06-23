@@ -57,5 +57,6 @@
   "connector_type": "SMA Male",
   "gain": "3 dBi",
   "image": "ziisor-tx915-jz-5.webp",
-  "description": "Miniature 915 MHz antenna with extremely poor VSWR across ISM band. Not recommended for practical use unless range is not a concern."
+  "description": "Miniature 915 MHz antenna with extremely poor VSWR across ISM band. Not recommended for practical use unless range is not a concern.",
+  "commentary": "Average antenna. We generally steer people toward the Gizont these days though."
 }

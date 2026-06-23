@@ -1,5 +1,6 @@
 {
   "slug": "gizont-nb-iot",
+  "sort_order": 10,
   "title": "Gizont NB-IoT",
   "manufacturer": {
     "brand_name": "Gizont",
@@ -51,5 +52,6 @@
   "category": "Portable Antennas",
   "connector_type": "SMA Male",
   "gain": "10 dBi(there is no way this is true)",
-  "image": "gizont-nb-iot.webp"
+  "image": "gizont-nb-iot.webp",
+  "commentary": "The one and only! This is our absolute very SMA antenna for pocket use due to it's flexibility and generally good performance. There are knockoff fakes out there though, so be careful where you buy from!"
 }

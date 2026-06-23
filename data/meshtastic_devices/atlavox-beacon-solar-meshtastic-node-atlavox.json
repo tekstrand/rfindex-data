@@ -1,6 +1,6 @@
 {
   "id": "atlavox-beacon-solar",
-  "sort_order": 10,
+  "sort_order": 40,
   "supported_firmware": [
     "Meshtastic"
   ],

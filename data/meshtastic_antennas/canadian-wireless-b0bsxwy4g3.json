@@ -51,5 +51,6 @@
   "connector_type": "N-Type Male",
   "gain": "3 dBi",
   "image": "canadian-wireless-b0bsxwy4g3.webp",
-  "description": "Compact 915 MHz outdoor LoRa antenna with N-Male connector. Slightly mistuned VSWR but acceptable for general use in the ISM band."
+  "description": "Compact 915 MHz outdoor LoRa antenna with N-Male connector. Slightly mistuned VSWR but acceptable for general use in the ISM band.",
+  "commentary": "We've seen a number of these on the mesh, but generally don't recommend them given the availability of antennas such as those from Rokland."
 }

@@ -62,5 +62,6 @@
   },
   "connector_type": "SMA Male",
   "gain": "1.2 dBi",
-  "image": "te-connectivity-ant-916-cw-hw-sma.webp"
+  "image": "te-connectivity-ant-916-cw-hw-sma.webp",
+  "commentary": "Solid antenna that looks pretty cool. Not flexible though so set expectations accordingly."
 }

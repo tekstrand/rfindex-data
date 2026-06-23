@@ -1,5 +1,6 @@
 {
   "slug": "rokland-6dbi-low-profile",
+  "sort_order": 40,
   "title": "Rokland 6dBi Low Profile Fiberglass",
   "manufacturer": {
     "brand_name": "Rokland",
@@ -51,5 +52,6 @@
   "connector_type": "N-Type Female",
   "gain": "6 dBi",
   "image": "rokland-6dbi-low-profile.webp",
-  "description": "Low-profile fiberglass antenna with N-Female connector, ideal for 915 MHz base station installations. Excellent VSWR performance across ISM band."
+  "description": "Low-profile fiberglass antenna with N-Female connector, ideal for 915 MHz base station installations. Excellent VSWR performance across ISM band.",
+  "commentary": "Really nice option for a lower profile higher gain antenna. If you have the space, get a longer antenna for better performance, but we see these performing well on the Austin Mesh network every day."
 }

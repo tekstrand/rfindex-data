@@ -72,5 +72,6 @@
   "connector_type": "SMA Male",
   "gain": "3 dBi",
   "image": "tenmory-5dbi-omni-tb-csa21.webp",
-  "description": "915MHz 5dBi LoRa Omni antenna. Hinged elbow design allows flexible orientation; performance varies significantly between straight and bent positions."
+  "description": "915MHz 5dBi LoRa Omni antenna. Hinged elbow design allows flexible orientation; performance varies significantly between straight and bent positions.",
+  "commentary": "Average antenna. We generally steer people toward the Gizont these days though."
 }

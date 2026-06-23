@@ -53,7 +53,7 @@
       }
     }
   ],
-  "suggested": true,
+  "suggested": false,
   "category": "Vehicle Antennas",
   "pdf": "PDFs/MA9-5N.pdf",
   "dimensions": {
@@ -62,5 +62,6 @@
   },
   "connector_type": "N-Type Male",
   "gain": "5.5 dBi",
-  "image": "te-connectivity-ma9-5n.webp"
+  "image": "te-connectivity-ma9-5n.webp",
+  "commentary": "While we used to recommend this antenna, it seems that manufacturing quality control has changed. SWR plots are regularly testing at 2.5-3 and ground planes do not resolve the issue."
 }

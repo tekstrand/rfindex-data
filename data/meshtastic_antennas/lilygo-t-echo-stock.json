@@ -50,5 +50,6 @@
   },
   "connector_type": "SMA Male",
   "gain": "Unknown",
-  "description": "915MHz antenna bundled with LILYGO T-Echo. Performance is suboptimal in ISM band and may hinder radio range."
+  "description": "915MHz antenna bundled with LILYGO T-Echo. Performance is suboptimal in ISM band and may hinder radio range.",
+  "commentary": "Get a different antenna immediately if not sooner."
 }

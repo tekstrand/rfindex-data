@@ -60,5 +60,6 @@
   "connector_type": "N-Type Male",
   "gain": "3 dBi",
   "image": "rak-3dbi-fiberglass.webp",
-  "description": "High-quality fiberglass omnidirectional antenna suitable for outdoor base station use. Good VSWR across the 915 MHz ISM band."
+  "description": "High-quality fiberglass omnidirectional antenna suitable for outdoor base station use. Good VSWR across the 915 MHz ISM band.",
+  "commentary": "Solid performer, though for most installs in Central Texas we prefer the higher gain versions."
 }

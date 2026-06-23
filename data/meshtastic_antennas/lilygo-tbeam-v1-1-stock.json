@@ -50,5 +50,6 @@
   },
   "connector_type": "SMA Male",
   "gain": "Unknown",
-  "description": "Basic 915MHz LoRa antenna bundled with LILYGO T-Beam V1.1. Limited performance. Not recommended for serious range use."
+  "description": "Basic 915MHz LoRa antenna bundled with LILYGO T-Beam V1.1. Limited performance. Not recommended for serious range use.",
+  "commentary": "Get a different antenna immediately if not sooner."
 }
