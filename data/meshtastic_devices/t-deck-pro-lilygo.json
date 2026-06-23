@@ -1,5 +1,6 @@
 {
   "id": "lilygo-t-deck-pro",
+  "sort_order": 120,
   "supported_firmware": [
     "Meshtastic"
   ],
@@ -57,5 +58,6 @@
     "Complete",
     "Standalone"
   ],
-  "description": "ESP32-S3 based e-ink device with integrated keyboard, touchscreen, LoRa, and support for voice or 4G modules."
+  "description": "ESP32-S3 based e-ink device with integrated keyboard, touchscreen, LoRa, and support for voice or 4G modules.",
+  "commentary": "The Pro version offers a really great case. The downside is that the battery isn't expandable, and the battery life is generally poor(<24h). Overall we still like this device as a standalone option, even with it's limitations."
 }

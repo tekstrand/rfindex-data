@@ -168,6 +168,7 @@ collections:
         field: manufacturer
     fields:
       - { label: "ID", name: "id", widget: "string", hint: "URL slug used for routing (e.g. heltec-lora-32-v3). Must match existing site URLs." }
+      - { label: "Sort Order", name: "sort_order", widget: "number", value_type: "int", required: false, hint: "Optional manual ordering; lower numbers sort first." }
       - label: "Supported Firmware"
         name: "supported_firmware"
         widget: "select"
@@ -296,6 +297,7 @@ collections:
     sortable_fields: ["title", "manufacturer"]
     fields:
       - { label: "Slug", name: "slug", widget: "string", hint: "URL slug used for routing. Must be unique." }
+      - { label: "Sort Order", name: "sort_order", widget: "number", value_type: "int", required: false, hint: "Optional manual ordering; lower numbers sort first." }
       - { name: "title", label: "Title", widget: "string" }
       - label: "Manufacturer"
         name: "manufacturer"
@@ -377,3 +379,4 @@ collections:
             multiple: false
             max_file_size: 200000
       - { name: "description", label: "Description", widget: "text", required: false }
+      - { name: "commentary", label: "Commentary", widget: "text", required: false }

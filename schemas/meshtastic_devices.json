@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "id": { "type": "string", "minLength": 1 },
+    "sort_order": { "type": "integer" },
     "supported_firmware": {
       "type": "array",
       "items": {

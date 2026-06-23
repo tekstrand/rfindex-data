@@ -4,6 +4,7 @@
   "additionalProperties": false,
   "properties": {
     "slug": { "type": "string", "minLength": 1 },
+    "sort_order": { "type": "integer" },
     "title": { "type": "string", "minLength": 1 },
     "manufacturer": {
       "type": "object",
@@ -88,6 +89,7 @@
     },
     "gain": { "type": "string" },
     "image": { "type": "string" },
-    "description": { "type": "string" }
+    "description": { "type": "string" },
+    "commentary": { "type": "string" }
   }
 }

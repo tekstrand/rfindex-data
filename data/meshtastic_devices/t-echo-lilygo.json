@@ -1,5 +1,6 @@
 {
   "id": "lilygo-t-echo",
+  "sort_order": 100,
   "supported_firmware": [
     "Meshtastic",
     "MeshCore"

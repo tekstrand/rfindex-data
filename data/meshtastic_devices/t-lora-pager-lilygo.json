@@ -1,5 +1,6 @@
 {
   "id": "lilygo-t-lora-pager",
+  "sort_order": 70,
   "supported_firmware": [
     "Meshtastic",
     "MeshCore"

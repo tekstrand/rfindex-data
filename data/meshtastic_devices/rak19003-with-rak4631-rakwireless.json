@@ -1,5 +1,6 @@
 {
   "id": "rak-rak19003-4631",
+  "sort_order": 140,
   "supported_firmware": [
     "Meshtastic",
     "MeshCore"

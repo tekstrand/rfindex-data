@@ -1,5 +1,6 @@
 {
   "id": "lilygo-t-deck",
+  "sort_order": 110,
   "supported_firmware": [
     "Meshtastic",
     "MeshCore"
