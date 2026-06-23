@@ -54,5 +54,6 @@
     "Complete",
     "Standalone"
   ],
-  "description": "ESP32-based smartwatch development board with touch display and Bluetooth/WiFi support."
+  "description": "ESP32-based smartwatch development board with touch display and Bluetooth/WiFi support.",
+  "commentary": "This is generally seen as a novelty by Austin Mesh. It's cool to play with, but we rarely see anyone actually using them day-to-day because the interfaces offered by Meshtastic and MeshCore are frustrating and slow compared to other devices or a phone app."
 }

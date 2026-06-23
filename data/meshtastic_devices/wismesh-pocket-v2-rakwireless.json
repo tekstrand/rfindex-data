@@ -50,5 +50,6 @@
   "category": [
     "Complete"
   ],
-  "description": "Fully enclosed LoRa node with display, battery, GPS, and SX1262 for plug-and-play Meshtastic use."
+  "description": "Fully enclosed LoRa node with display, battery, GPS, and SX1262 for plug-and-play Meshtastic use.",
+  "commentary": "Solid option while slightly overpriced compared to DIY case options. They're a great option to get started with if you want something ready-to-go out of the box."
 }

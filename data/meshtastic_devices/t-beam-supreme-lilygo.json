@@ -61,5 +61,6 @@
   "category": [
     "DIY"
   ],
-  "description": "High-performance LoRa development board with ESP32-S3, GPS, and SX1262."
+  "description": "High-performance LoRa development board with ESP32-S3, GPS, and SX1262.",
+  "commentary": "The T-Beam Supreme is a cool form factor and has lots of cases available. It's generally a power hungry device, but many users on our mesh run these every day."
 }

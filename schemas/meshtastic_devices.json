@@ -116,6 +116,7 @@
     "features": {
       "type": "array",
       "items": { "type": "string" }
-    }
+    },
+    "commentary": { "type": "string" }
   }
 }

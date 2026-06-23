@@ -54,5 +54,6 @@
   "category": [
     "DIY"
   ],
-  "description": "Compact ESP32 LoRa development board with onboard OLED and battery management"
+  "description": "Compact ESP32 LoRa development board with onboard OLED and battery management",
+  "commentary": "The Heltec V3, as it's generally referred to, is likely the single most prolific hardware currently deployed on Mesh networks across America. It is not the best at anything, but it is adequite in most. The ESP32 chip means it will use more power than necessary, but brings nice creature comforts like WiFi. We generally steer new users towards the V4 or T114 these days."
 }

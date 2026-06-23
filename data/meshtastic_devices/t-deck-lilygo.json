@@ -62,5 +62,6 @@
     "Standalone",
     "Complete"
   ],
-  "description": "All-in-one portable ESP32-S3 device with keyboard, display, LoRa, and SX1262."
+  "description": "All-in-one portable ESP32-S3 device with keyboard, display, LoRa, and SX1262.",
+  "commentary": "We generally like this device, but it has a few downsides. It's power hungry(expect less than 24h) and the UI from both Meshtastic and MeshCore leaves a lot to be desired. Expect a learning curve. All of that said, many of us own at least one and really enjoy this as a standalone device. If you're looking for standalone, also consider the T-Pager."
 }

@@ -52,5 +52,6 @@
     "Complete",
     "Solar"
   ],
-  "description": "Smaller version of the WisMesh Repeater with external battery support and weather-resistant design."
+  "description": "Smaller version of the WisMesh Repeater with external battery support and weather-resistant design.",
+  "commentary": "Strongly recommended. These little units have been deployed all over Central Texas for the last few years and hold up grade to the rain and sun. A simple 2500mah or 18650 battery is all you need to keep this and a RAK19007 or 19003 powered indefinitely."
 }

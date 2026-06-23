@@ -6,17 +6,21 @@
   ],
   "purchase_urls": [
     {
-      "supplier": "AliExpress",
-      "url": "https://s.click.aliexpress.com/e/_olqxYhX"
+      "supplier": "Amazon",
+      "url": "https://amzn.to/4ez0AQv"
     },
     {
       "supplier": "Seeed Studio",
       "url": "https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html"
+    },
+    {
+      "supplier": "AliExpress",
+      "url": "https://s.click.aliexpress.com/e/_c3Ysagx7"
     }
   ],
   "price": {
-    "min": 9.9,
-    "max": 9.9,
+    "min": 10.36,
+    "max": 18.99,
     "currency": "USD"
   },
   "model": "Wio SX1262 + XIAO ESP32S3",
@@ -51,5 +55,6 @@
   "category": [
     "DIY"
   ],
-  "description": "Ultra-compact LoRa development board combining the XIAO ESP32S3 with an onboard SX1262 module for wireless communication."
+  "description": "Ultra-compact LoRa development board combining the XIAO ESP32S3 with an onboard SX1262 module for wireless communication.",
+  "commentary": "Unless you have a specific need for the ESP32 version of this, we strongly recommend the nRF52 chipset version. These little units are great!"
 }

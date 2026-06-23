@@ -40,5 +40,6 @@
   "category": [
     "Solar"
   ],
-  "description": "A solar-powered LoRa radio device designed to extend mesh network coverage in outdoor or remote settings. It features an integrated solar panel that prolongs battery life by 1 to 2 days under optimal sunlight conditions, ensuring consistent operation during extended activities."
+  "description": "A solar-powered LoRa radio device designed to extend mesh network coverage in outdoor or remote settings. It features an integrated solar panel that prolongs battery life by 1 to 2 days under optimal sunlight conditions, ensuring consistent operation during extended activities.",
+  "commentary": "We do not recommend the Spec5 Beacon. We've seen multiple units fall apart with only 3 months of exposure to sun and wind. There are multiple weak points including the solar panel screw, waterproofing seal, and antenna reliability."
 }

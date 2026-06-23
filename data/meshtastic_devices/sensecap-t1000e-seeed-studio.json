@@ -50,5 +50,6 @@
   "category": [
     "Complete"
   ],
-  "description": "Ultra-compact LoRaWAN tracker with GPS and BLE, rechargeable battery, and IP65 case."
+  "description": "Ultra-compact LoRaWAN tracker with GPS and BLE, rechargeable battery, and IP65 case.",
+  "commentary": "This is the device you can give to your friend, parents, or neighbor, and they can simply slip it into a pocket or purse. The internal antenna lacks RF performance, so be prepared to hold it up high to make contact in weaker mesh areas. We generally like this little device, but for a little sacrifice(like a unit with an external antenna) you'll get much better performance."
 }

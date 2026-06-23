@@ -183,6 +183,7 @@ collections:
         displayFields: ["title"]
       - { name: "model", label: "Model", widget: "string" }
       - { name: "description", label: "Description", widget: "text", required: false }
+      - { name: "commentary", label: "Commentary", widget: "text", required: false }
       - label: "Category"
         name: "category"
         widget: "select"

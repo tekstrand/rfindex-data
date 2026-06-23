@@ -53,5 +53,6 @@
   "category": [
     "DIY"
   ],
-  "description": "WisBlock compact LoRa node built with RAK19003 mini base board and RAK4631 core."
+  "description": "WisBlock compact LoRa node built with RAK19003 mini base board and RAK4631 core.",
+  "commentary": "The RAK19003 and 19007 are the baseline for our network. Well over 100 of these are deployed throughout Central Texas. While midrange in transmit power(22dbm) they offer spectacular receive capability, and almost unbelievable battery life. A single 18650 allows a RAK to run for multiple days, and a 1w solar panel is more than enough to keep it powered indefinitely here in the Texas sun. Some of our RAK units have now been deployed 3 years continuously."
 }

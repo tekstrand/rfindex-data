@@ -59,5 +59,6 @@
   "category": [
     "DIY"
   ],
-  "description": "ESP32 LoRa device with GPS, SX1272, and 18650 battery holder."
+  "description": "ESP32 LoRa device with GPS, SX1272, and 18650 battery holder.",
+  "commentary": "The T-Beam is the o.g. radio. This is what Austin Mesh started with back in 2021. It has tons of cases available and is generally a power hungry device, but many users on our mesh run these every day."
 }

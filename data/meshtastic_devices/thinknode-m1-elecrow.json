@@ -48,5 +48,6 @@
     "DIY",
     "Complete"
   ],
-  "description": "Meshtastic LoRa transceiver featuring nRF52840 microcontroller, GPS support, and 1.54-inch display, designed for outdoor communications and tracking."
+  "description": "Meshtastic LoRa transceiver featuring nRF52840 microcontroller, GPS support, and 1.54-inch display, designed for outdoor communications and tracking.",
+  "commentary": "The M1 is a fairly common device to see on our mesh. Good battery life and a nice screen offer a solid combo of features. If you like the looks of this unit, we think it's a good option."
 }
